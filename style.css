@@ -27,23 +27,24 @@
 }
 
 html {
-width:100%;
-max-width: 100%;
-overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+
 }
 
 body {
     margin: 0;
     overflow-x: hidden;
-width:100%;
-max-width: 100%;
+    width: 100%;
+    max-width: 100%;
 }
 
 .container {
     margin: 0 auto;
     transition: width 0.5s;
     width: 100%;
-max-width: 100%;
+    overflow-x: hidden;
 }
 
 /*===============HEADER===============*/
@@ -1436,6 +1437,7 @@ footer-top-link-last .footer-top-widgets {
     .mobile-h1,
     .recent-posts-h1 {
         font-size: 25px;
+        text-align: center;
     }
 
     .examples-content-text,
@@ -1977,6 +1979,7 @@ footer-top-link-last .footer-top-widgets {
     .mobile-h1,
     .recent-posts-h1 {
         font-size: 25px;
+        text-align: center;
     }
 
     .examples-content-text,

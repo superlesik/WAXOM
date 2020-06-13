@@ -178,6 +178,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: -webkit-fill-available;
+    width: -moz-available;
     position: absolute;
     z-index: 4;
     line-height: 0;
@@ -315,6 +316,80 @@ header {
 .pagination-link:hover {
     border: 2px solid #d3c1ad;
     background-color: transparent;
+}
+
+/*============MENU HIDDEN============*/
+
+.nav-menu-hidden {
+    width: 40px;
+    opacity: 1;
+    display: none;
+}
+
+.topmenu,
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topmenu > li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.topmenu > li:last-child {
+    margin-right: 0;
+}
+
+.submenu a {
+    display: block;
+    width: 100px;
+    padding: 3px 5px;
+    text-decoration: none;
+    outline: none;
+    transition: .5s linear;
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+
+.nav-menu-hidden .submenu {
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.nav-menu-hidden ul li:hover .submenu {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.nav-menu-hidden ul a {
+    color: #fff;
+}
+
+.fa-th-list {
+    color: #fff;
 }
 
 
@@ -1570,6 +1645,9 @@ footer-top-link-last .footer-top-widgets {
         display: none;
     }
 
+    .nav-menu-hidden {
+        display: block;
+    }
 
     .menu-link {
         font-size: 0.675rem;
@@ -1831,6 +1909,9 @@ footer-top-link-last .footer-top-widgets {
         display: none;
     }
 
+    .nav-menu-hidden {
+        display: block;
+    }
 
     .menu-link {
         font-size: 0.675rem;
@@ -1998,7 +2079,7 @@ footer-top-link-last .footer-top-widgets {
     }
 
     .mobile {
-        padding: 20px 0 0 25px;
+        padding: 20px 0 0 0;
         position: relative;
     }
 
@@ -2007,6 +2088,7 @@ footer-top-link-last .footer-top-widgets {
         bottom: 0;
         opacity: .1;
         z-index: 1;
+        height: 500px;
     }
 
     .mobile-content {
@@ -2021,10 +2103,11 @@ footer-top-link-last .footer-top-widgets {
     .statistic {
         flex-direction: column;
         height: auto;
-        max-width: 320px;
+        width: 100%;
         padding: 20px 0 14px 0;
     }
 
+    .figure-posts,
     .figure-posts img {
         width: 320px;
     }

@@ -73,16 +73,45 @@
         </header>
         <!-- sLIDER -->
         <section class="slider clearfix">
-            <div class="slider-background"><img src="img/photo.png" class="slider-img" alt=""></div>
-            <!--  <div class="slider-background"></div>-->
-            <div class="arrows">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <a href="#" data-target="#carouselExampleIndicators" class="pagination-link active" data-slide-to="0"></a>
+                    <a href="#" data-target="#carouselExampleIndicators" class="pagination-link" data-slide-to="1"></a>
+                    <a href="#" data-target="#carouselExampleIndicators" class="pagination-link" data-slide-to="2"></a>
+                    <!--<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+                </ol>
+                <div class="carousel-inner vh-100">
+                    <div class="carousel-item slider-background active">
+                        <img src="img/photo.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item slider-background">
+                        <img src="img/photo2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item slider-background">
+                        <img src="img/photo3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- <div class="slider-background"><img src="img/photo.png" class="slider-img" alt=""></div>
+             <div class="slider-background"></div>
+           <div class="arrows">
                 <a href="#" class="arrows-link"><svg class="arrows-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="73" viewBox="0 0 40 73">
                         <path d="M38.026 72.98L.005 36.497 38.026.018l1.969 2.004L4.066 36.498l35.929 34.479z" />
                         <path fill="#fff" d="M38.026 72.98L.005 36.497 38.026.018l1.969 2.004L4.066 36.498l35.929 34.479z" /></svg></a>
                 <a href="#" class="arrows-link"><svg class="arrows-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="73" viewBox="0 0 40 73">
                         <path d="M1.974 72.98l38.021-36.482L1.974.018.004 2.022l35.93 34.476L.004 70.977z" />
                         <path fill="#fff" d="M1.974 72.98l38.021-36.482L1.974.018.004 2.022l35.93 34.476L.004 70.977z" /></svg></a>
-            </div>
+            </div>-->
             <div class="slider-text">
                 <p class="slider-p">Unique and Modern Design</p>
                 <h1 class="slider-h1">Portfolio PSD Template</h1>
@@ -91,13 +120,11 @@
                     <span class="btn-txt">Get Started</span>
                 </a>
             </div>
-            <div class="pagination">
+            <!-- div class="pagination">
                 <a href="#" class="pagination-link"></a>
                 <a href="#" class="pagination-link"></a>
                 <a href="#" class="pagination-link"></a>
-                <a href="#" class="pagination-link"></a>
-                <a href="#" class="pagination-link"></a>
-            </div>
+            </div -->
         </section>
         <!-- SERVICES -->
         <section id="about" class="services clearfix">
@@ -380,8 +407,8 @@
                 </figure>
             </div>
             <div class="recent-posts-pagination">
-                <a href="#!" class="rp-pagination-link">&#5176;</a>
-                <a href="#!" class="rp-pagination-link">&#5171;</a>
+                <a href="#" class="rp-pagination-link">&#5176;</a>
+                <a href="#" class="rp-pagination-link">&#5171;</a>
             </div>
         </section>
         <!-- PARTNERS -->
@@ -428,7 +455,7 @@
                             <span class="logo-txt">Waxom</span>
                         </a>
                         <div class="footer-top-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati nam voluptates aliquam, dolor placeat hic reprehenderit eos numquam quos eius dignissimos tempora delectus ut ducimus aperiam facere cupiditate?
-                        </div><a class="read-more" href="#!">
+                        </div><a class="read-more" href="#">
                             Read More<i class="fas fa-caret-right"></i></a>
                     </div>
                     <div class="footer-top-column">

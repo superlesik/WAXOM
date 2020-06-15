@@ -40,7 +40,7 @@ body {
     max-width: 100%;
 }
 
-.container {
+.container-main {
     margin: 0 auto;
     transition: width 0.5s;
     width: 100%;
@@ -161,17 +161,18 @@ header {
 /*======SLIDER=======*/
 
 .slider {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
 .slider-img {
-    position: absolute;
+    position: relative;
     z-index: 0;
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
+object-fit: cover;
+    opacity: .5;
 }
 
 .slider-background {
@@ -179,9 +180,9 @@ header {
     width: 100%;
     height: 100vh;
     z-index: 1;
-    background: rgba(17, 17, 17, 0.7);
+    background: rgba(0, 0, 0);
     background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
 }
 
 .arrows {
@@ -364,7 +365,6 @@ header {
     font-size: .875rem;
     font-weight: 300;
     font-family: "Montserrat", sans-serif;
-background-color: black;
 }
 
 .submenu {
@@ -1669,23 +1669,6 @@ footer-top-link-last .footer-top-widgets {
     .menu-button svg {
         width: 15px;
     }
-
-.slider {
-    height: 100vh;
-    width: 100%;
-}
-
-.slider-img {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-}
-
-.slider-background {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-}
 
     .slider-p {
         font-size: 1.5rem;
